@@ -1,0 +1,201 @@
+/* === PAGE BACKGROUND AND TEXT STYLE === */
+body {
+    font-family: 'Trebuchet MS', Arial, sans-serif; /* 💡 Change the font family for the entire page */
+    background-color: #bfbfbf; /* 🎨 You can change the entire page background color here */
+}
+
+/* === PARAGRAPH STYLE === */
+p {
+    color: #1a1a1a; /* 🎨 Bio and fun fact text color */
+    text-align: center; /* 💡 Like "text center" in Google Docs/Word */
+}
+
+/* === LINK STYLES === */
+a {
+    text-decoration: none;
+    color: #404040; /* 💡 All links will appear blue by default */
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: #404040; /* IMPORTANT: make this the same as above! ^^^ */
+}
+
+/* === MAIN CONTAINER BOX (THE CARD) === */
+#container {
+    max-width: 400px; /* 💡 Change this to make the card bigger/smaller */
+    background-color: #f2f2f2; /* 🎨 Card background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* 🎨 Adds a soft shadow */
+    border-radius: 10px; /* 💡 Rounded corners */
+    margin: 15px auto;
+    padding: 25px;
+}
+
+/* === "HI, MY NAME IS" HEADING === */
+#name-intro {
+    font-family: 'Courier New', Courier, monospace; /* 💡 Change the font family for the intro text */
+    color: #333333; /* 🎨 Intro text color */
+    margin-bottom: 15px;
+}
+
+/* === PROFILE PICTURE STYLE === */
+#profile-pic {
+    width: 90%; /* 💡 Resize profile picture here */
+    border-radius: 10px; /* 💡 Rounds the corners of the profile picture */
+    margin-bottom: 15px;
+}
+
+/* === YOUR NAME (BIG TEXT) === */
+#name {
+    font-size: 64px; /* 💡 Change this to make your name bigger/smaller */
+    color: #1a1a1a; /* 🎨 Name text color */
+    margin-bottom: 15px;
+}
+
+/* === HOMETOWN TEXT === */
+#hometown {
+    color: #4d4d4d; /* 🎨 Hometown text color */
+    margin-bottom: 10px;
+}
+
+/* === EMAIL SECTION === */
+#email {
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+#email-link { /* The link to your email */
+    color: #1a1a1a; /* 🎨 Change the color of the email link */
+    text-decoration: underline; 
+}
+
+#email-link:hover { /* Change the color of the link when you put your mouse over it */
+    color: #4d4d4d; /* 🎨 Change the hover color of the email link */
+}
+
+/* === BIO SECTION === */
+#bio {
+    font-size: 20px; /* 💡 Change the size of your bio text */
+    margin: 10px;
+}
+
+#fun-fact {
+    font-size: 15px; /* 💡 Change the size of the fun fact text */
+    margin: 10px;
+}
+
+/* === BACKGROUND IMAGE STYLE === */
+#background-img {
+    background-image: url("[PUT A URL HERE !!!]");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* === Don't Touch! (your website will totally explode) === */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#profile-pic {
+    aspect-ratio: 1 / 1; /* Makes the image a square */
+    object-fit: cover;
+    display: block;
+}
+
+#background-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Makes sure background stays behind everything else */
+    background-size: cover; /* Makes sure image covers the whole background */
+    background-position: center;
+}
